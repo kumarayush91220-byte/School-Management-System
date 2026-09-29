@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+<header class="navbar">
+
+    <div class="logo-section">
+        <div class="school-logo">🎓</div>
+        <div class="school-name">
+            <h2>GREEN VALLEY PUBLIC SCHOOL</h2>
+            <p>School Management System</p>
+        </div>
+    </div>
+
+    <nav class="nav-menu">
+        <a href="javascript:void(0)" onclick="goHome()" class="active" id="home">⌂ Home</a>
+        <a href="#about">About Us</a>
+        <a href="javascript:void(0)" onclick="goToModules()">Modules</a>
+        <a href="#contact">Contact Us</a>
+       <button class="login-btn" onclick="openLogin()">Login</button>
+    </nav>
+
+</header>
+    <div class="hero">
+    <img src="images/school_logo2.png" alt="School Image">
+    </div>
+
+    <!-- SCHOOL MANAGEMENT MODULES -->
+<section id="modules" class="modules-section">
+    <div class="modules-heading">
+        <h2>School Management <span>Modules</span></h2>
+        <p> Manage school information and daily activities easily through our digital management system.</p>
+    </div>
+
+    <div class="modules-container">
+        <!-- Login -->
+        <div class="module-card">
+            <div class="module-icon">🔐</div>
+            <h3>Secure login & User Access</h3>
+            <p>Secure login access for authorized school users.</p>
+           <button onclick="openLogin()">User Access</button>
+        </div>
+
+        <!-- Student -->
+        <div class="module-card">
+            <div class="module-icon">👨‍🎓</div>
+            <h3>Student Information Management</h3>
+            <p>Add, update, delete and manage student records.</p>
+            <button onclick="openStudentModule()">Manage Students</button>
+        </div>
+
+        <!-- MODULE 3: TEACHER & STAFF MANAGEMENT -->
+<div class="module-card">
+    <div class="module-icon">👨‍🏫</div>
+    <h3>Teacher & Staff Management</h3>
+    <p>Manage teacher details, subjects and information.</p>
+    <button type="button"
+            class="module-btn"
+            onclick="openTeacherModule()">
+        Manage Staff
+    </button>
+</div>
+
+        <!-- Attendance -->
+        <div class="module-card">
+            <div class="module-icon">📋</div>
+            <h3>Attendance & Daily Records</h3>
+            <p>Record and manage daily student attendance.</p>
+         <button onclick="openAttendanceModule()">Open Attendance</button>
+        </div>
+
+        <!-- Class -->
+        <div class="module-card">
+            <div class="module-icon">🏫</div>
+            <h3>Class & Academic Management</h3>
+            <p> Manage classes, sections and class-related information. </p>
+            <button onclick="openClassModule()">Manage Classes</button>
+
+        </div>
+
+        <!-- Fee -->
+        <div class="module-card">
+            <div class="module-icon">💳</div>
+            <h3>Fee & Payment Management</h3>
+            <p>Manage student fees, payments and fee records.</p>
+            <button onclick="openFeeModule()">Manage Fees</button>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT SCHOOL SECTION -->
+<section id="about" class="about-section">
+    <div class="about-container">
+        <div class="about-image">
+            <img src="images/about.png" alt="Green Valley Public School">
+        </div>
+        <div class="about-content">
+            <span class="about-subtitle">ABOUT OUR SCHOOL</span>
+            <h2>Green Valley <span>Public School</span></h2>
+            <p>
+                Green Valley Public School is committed to providing a
+                positive and supportive environment where students can
+                learn, grow and develop their skills.
+            </p>
+            <p>
+                Our School Management System provides a simple and
+                efficient way to manage important school information
+                digitally. It helps administrators maintain student,
+                teacher, attendance, class and fee records efficiently.
+            </p>
+            <div class="about-points">
+                <div>
+                    <strong>✓</strong>
+                    <span>Quality Education</span>
+                </div>
+                <div>
+                    <strong>✓</strong>
+                    <span>Digital Management</span>
+                </div>
+                <div>
+                    <strong>✓</strong>
+                    <span>Student-Focused Environment</span>
+                </div>
+                <div>
+                    <strong>✓</strong>
+                    <span>Efficient Administration</span>
+                </div>
+            </div>
+            <a href="#modules" class="about-btn">Explore Our Modules</a>
+        </div>
+    </div>
+</section>
+
+    <!-- ================= PRINCIPAL MESSAGE ================= -->
+<section class="principal-section">
+    <div class="principal-content">
+        <div class="principal-text">
+            <h2>Message From <span>the Principal</span></h2>
+            <p>Welcome to Green Valley Public School. Our aim is to provide
+                students with a supportive, disciplined and inspiring learning
+                environment where they can develop knowledge, skills and
+                confidence.</p>
+            <p>We believe that education is not limited to classroom learning.
+                It also includes values, creativity, sports, technology,
+                leadership and responsible citizenship.</p>
+            <p>Our dedicated teachers and staff work together to provide
+                quality education and encourage every student to achieve
+                their full potential.</p>
+            <p>Through our School Management System, we are also working
+                towards making school information and resources more
+                organized, accessible and efficient.</p>
+        </div>
+        <div class="principal-image">
+            <img src="images/Principal.avif" alt="Principal">
+        </div>
+    </div>
+</section>
+
+<!-- ================= VICE PRINCIPAL MESSAGE ================= -->
+<section class="vice-section">
+    <div class="vice-image">
+        <img src="images/vice_principle.webp" alt="Vice Principal">
+    </div>
+    <div class="vice-content">
+        <h2>Vice Principal's <span>Message</span></h2>
+        <p>Education is the foundation of a successful and responsible
+            society. Our school encourages students to learn, explore and
+            develop their individual talents.</p>
+
+        <p> We focus on creating a positive academic environment where
+            students can develop discipline, confidence, communication
+            skills and leadership qualities.</p>
+
+        <p>Our teachers and staff continuously support students in their
+            academic and extracurricular activities.</p>
+
+        <p>Together, we strive to create an environment where every student
+            feels valued, respected and motivated to succeed.</p>
+
+    </div>
+</section>
+
+<!-- ================= ALUMNI SECTION ================= -->
+<section class="alumni-section">
+    <h2>Our <span>Alumni</span></h2>
+    <p class="alumni-intro">
+        Our alumni continue to make us proud through their achievements
+        in higher education, technology, business and other professional
+        fields.</p>
+
+    <div class="alumni-container">
+        <!-- Alumni 1 -->
+        <div class="alumni-card">
+            <img src="images/student1.jpg" alt="Alumni">
+            <h3>Rahul Kumar</h3>
+            <ul>
+                <li>Batch 2026</li>
+                <li>Science Stream</li>
+                <li>98.86%</li>
+            </ul>
+        </div>
+
+        <!-- Alumni 2 -->
+        <div class="alumni-card">
+            <img src="images/student3.png" alt="Alumni">
+            <h3>Ananya Singh</h3>
+            <ul>
+                <li>Batch 2025</li>
+                <li>Science Stream</li>
+                <li>92.59%</li>
+            </ul>
+        </div>
+
+        <!-- Alumni 3 -->
+        <div class="alumni-card">
+            <img src="images/student2.png" alt="Alumni">
+            <h3>Aman Verma</h3>
+            <ul>
+                <li>Batch 2024</li>
+                <li>Arts Stream</li>
+                <li>96.12%</li>
+            </ul>
+        </div>
+
+        <!-- Alumni 4 -->
+        <div class="alumni-card">
+            <img src="images/student4.jpg" alt="Alumni">
+            <h3>Priya Sharma</h3>   
+            <ul>
+                <li>Batch 2023</li>
+                <li>Commerce Stream</li>
+                <li>97.82%</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <div class="footer-container">
+        <!-- School Information -->
+        <div class="footer-column school-info">
+            <h2>Green Valley</h2>
+            <h3>Public School</h3>
+            <p>Green Valley Public School is committed to providing
+                quality education and developing responsible, confident
+                and successful students.</p>
+            <h4>Connect With Us</h4>
+
+            <div class="social-icons">
+                <a href="#">f</a>
+                <a href="#">◎</a>
+                <a href="#">in</a>
+            </div>
+        </div>
+
+        <!-- Academics -->
+        <div class="footer-column">
+            <h2>Academics</h2>
+            <a href="#">School Curriculum</a>
+            <a href="#">Classes</a>
+            <a href="#">Subjects</a>
+            <a href="#">Academic Calendar</a>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-column">
+            <h2>Resources</h2>
+            <a href="#">Infrastructure</a>
+            <a href="#">Student Resources</a>
+            <a href="#">Events</a>
+            <a href="#">Gallery</a>
+        </div>
+
+        <!-- Contact -->
+        <div class="footer-column">
+            <h2>Contact Us</h2>
+            <p>☎ +91 98765 43210</p>
+            <p>📍 Ranchi, Jharkhand, India</p>
+            <p>✉ info@greenvalleyschool.com</p>
+            <p>🕘 Mon - Sat: 8:00 AM - 4:00 PM</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>© 2026 Green Valley Public School. All Rights Reserved.</p>
+    </div>
+</footer>
+
+<!-- CONTACT US SECTION -->
+<section id="contact" class="contact-section">
+    <div class="contact-container">
+        <div class="contact-info">
+            <h2>Contact <span>Us</span></h2>
+            <p>We are always happy to hear from students, parents and visitors.
+                Feel free to contact Green Valley Public School for any information
+                or assistance.</p>
+
+            <div class="contact-details">
+                <p>📍 <strong>Address:</strong> Green Valley Public School, Ranchi, Jharkhand</p>
+                <p>📞 <strong>Phone:</strong> +91 98765 43210</p>
+                <p>✉️ <strong>Email:</strong> info@greenvalleyschool.com</p>
+                <p>🕒 <strong>Office Hours:</strong> Monday – Saturday, 9:00 AM – 4:00 PM</p>
+            </div>
+        </div>
+
+        <div class="contact-form">
+            <h2>Send Us a <span>Message</span></h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Subject" required>
+                <textarea placeholder="Write your message..." rows="5" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<!-- ================= LOGIN PORTAL ================= -->
+<div id="loginModal" class="login-modal">
+    <div class="login-box">
+        <button class="close-login" onclick="closeLogin()">&times;</button>
+        <div class="login-icon">🔐</div>
+        <h2>School Management System</h2>
+        <p class="login-subtitle">Secure User Login</p>
+        <form onsubmit="loginUser(event)">
+            <label for="username">Username</label>
+            <input
+                type="text"id="username"placeholder="Enter username"required>
+            <label for="password">Password</label>
+            <div class="password-box">
+                <input
+                    type="password"id="password"placeholder="Enter password"required>
+                <button type="button" onclick="togglePassword()">👁</button>
+            </div>
+
+            <label for="userRole">Login As</label>
+            <select id="userRole" required>
+                <option value="">Select Role</option>
+                <option value="admin">Admin</option>
+                <option value="teacher">Teacher</option>
+                <option value="student">Student</option>
+            </select>
+            <button type="submit" class="login-submit">Login</button>
+        </form>
+        <p class="demo-login">Demo: admin / admin123</p>
+    </div>
+</div>
+
+<!-- ================= USER DASHBOARD ================= -->
+<div id="userDashboard" class="dashboard-modal">
+    <div class="dashboard-box">
+        <button class="close-login" onclick="closeDashboard()">&times;</button>
+        <div class="dashboard-icon">👤</div>
+        <h2>Welcome to Dashboard</h2>
+        <p id="welcomeMessage"></p>
+        <div class="dashboard-info">
+            <div>
+                <strong>User:</strong>
+                <span id="dashboardUser"></span>
+            </div>
+            <div>
+                <strong>Role:</strong>
+                <span id="dashboardRole"></span>
+            </div>
+        </div>
+        <button class="logout-btn" onclick="logoutUser()">
+            Logout
+        </button>
+    </div>
+</div>
+
+    <!-- STUDENT MANAGEMENT MODULE-->
+
+<section id="studentModule" class="student-module">
+    <div class="student-header">
+        <div>
+            <span class="module-subtitle">STUDENT MODULE</span>
+            <h2>Student <span>Management</span></h2>
+            <p>Add, manage, search and maintain student records
+                in the school management system.</p>
+        </div>
+        <button class="back-home-btn" onclick="closeStudentModule()">← Back to Home</button>
+    </div>
+
+
+    <!-- STUDENT FORM -->
+    <div class="student-form-card">
+        <h3 id="studentFormTitle">Add New Student</h3>
+        <form id="studentForm" onsubmit="saveStudent(event)">
+            <input type="hidden" id="editStudentIndex">
+            <div class="student-form-grid">
+                <div>
+                    <label>Student ID</label>
+                    <input
+                        type="text"id="studentId"placeholder="Enter Student ID"required>
+                </div>
+                <div>
+                    <label>Student Name</label>
+                    <input
+                        type="text"id="studentName"placeholder="Enter student name"required>
+                </div>
+
+                <div>
+                    <label>Class</label>
+                    <select id="studentClass" required>
+                        <option value="">Select Class</option>
+                        <option value="Class 6">Class 6</option>
+                        <option value="Class 7">Class 7</option>
+                        <option value="Class 8">Class 8</option>
+                        <option value="Class 9">Class 9</option>
+                        <option value="Class 10">Class 10</option>
+                        <option value="Class 11">Class 11</option>
+                        <option value="Class 12">Class 12</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Section</label>
+                    <select id="studentSection" required>
+                        <option value="">Select Section</option>
+                        <option value="A">A</option>
+                        <option value="B">B</option>
+                        <option value="C">C</option>
+                        <option value="D">D</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Date of Birth</label>
+                    <input
+                        type="date"id="studentDob"required>
+                </div>
+
+                <div>
+                    <label>Gender</label>
+                    <select id="studentGender" required>
+                        <option value="">Select Gender</option>
+                        <option value="Male">Male</option>
+                        <option value="Female">Female</option>
+                        <option value="Other">Other</option>
+                    </select>
+                </div>
+
+                <div>
+                    <label>Parent / Guardian Name</label>
+                    <input
+                        type="text"id="parentName"placeholder="Enter parent/guardian name"required>
+                </div>
+
+                <div>
+                    <label>Phone Number</label>
+                    <input
+                        type="tel"id="parentPhone"placeholder="Enter phone number"required>
+                </div>
+
+            </div>
+            <div class="student-form-buttons">
+                <button type="submit" class="save-student-btn">Save Student</button>
+                <button type="button"class="clear-student-btn"onclick="clearStudentForm()">Clear</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="student-record-card">
+        <div class="student-record-header">
+            <div>
+                <h3>Student Records</h3>
+                <p id="studentCount">Total Students: 0</p>
+            </div>
+            <input
+                type="search"id="studentSearch"placeholder="Search student..."oninput="searchStudents()"> 
+        </div>
+
+
+        <!-- TABLE -->
+        <div class="student-table-container">
+            <table class="student-table">
+                <thead>
+                    <tr>
+                        <th>Student ID</th>
+                        <th>Name</th>
+                        <th>Class</th>
+                        <th>Section</th>
+                        <th>DOB</th>
+                        <th>Gender</th>
+                        <th>Parent / Guardian</th>
+                        <th>Phone</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="studentTableBody">
+                </tbody>
+            </table>
+        </div>
+        <p id="noStudentMessage" class="no-student-message">
+            No student records found.
+        </p>
+    </div>
+</section>
+
+
+<!--TEACHER & STAFF MANAGEMENT FLOATING MODULE -->
+<div id="teacherManagementModal" class="teacher-modal">
+    <div class="teacher-modal-box">
+        <!-- HEADER -->
+        <div class="teacher-modal-header">
+            <div>
+                <small>MODULE 03</small>
+                <h2>Teacher & Staff Management</h2>
+                <p>Manage teachers and school staff records</p>
+            </div>
+            <button type="button"
+                    class="teacher-close-btn"
+                    onclick="closeTeacherModule()">
+                &times;
+            </button>
+        </div>
+
+        <!-- BODY -->
+        <div class="teacher-modal-body">
+            <!-- STATISTICS -->
+            <div class="teacher-stat-container">
+                <div class="teacher-stat-card">
+                    <div class="teacher-stat-icon">👥</div>
+                    <div>
+                        <h3 id="totalStaff">0</h3>
+                        <p>Total Staff</p>
+                    </div>
+                </div>
+                <div class="teacher-stat-card">
+                    <div class="teacher-stat-icon">👨‍🏫</div>
+                    <div>
+                        <h3 id="maleStaff">0</h3>
+                        <p>Male Staff</p>
+                    </div>
+                </div>
+                <div class="teacher-stat-card">
+                    <div class="teacher-stat-icon">👩‍🏫</div>
+                    <div>
+                        <h3 id="femaleStaff">0</h3>
+                        <p>Female Staff</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ADD STAFF FORM -->
+            <div class="teacher-form-card">
+                <div class="teacher-section-title">
+                    <h3>Add / Update Staff</h3>
+                    <p>Enter teacher or staff information below.</p>
+                </div>
+                <form id="teacherForm">
+                    <input type="hidden" id="teacherEditIndex" value="-1">
+                    <div class="teacher-form-grid">
+
+                        <!-- Staff ID -->
+                        <div class="teacher-input-group">
+                            <label>Staff ID *</label>
+                            <input
+                                type="text"id="teacherId"placeholder="Example: T001"required>
+                        </div>
+
+                        <!-- Name -->
+                        <div class="teacher-input-group">
+                            <label>Full Name *</label>
+                            <inputtype="text"id="teacherName"placeholder="Enter full name"required>
+                        </div>
+
+                        <!-- Gender -->
+                        <div class="teacher-input-group">
+                            <label>Gender *</label>
+                            <select id="teacherGender" required>
+                                <option value="">Select Gender</option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="Other">Other</option>
+                            </select>
+                        </div>
+
+                        <!-- Designation -->
+                        <div class="teacher-input-group">
+                            <label>Designation *</label>
+                            <input type="text"id="teacherDesignation"placeholder="Example: Assistant Teacher"required>
+                        </div>
+
+                        <!-- Subject -->
+                        <div class="teacher-input-group">
+                            <label>Subject / Department *</label>
+                            <input type="text"id="teacherSubject"placeholder="Example: Mathematics"required>
+                        </div>
+
+                        <!-- Qualification -->
+                        <div class="teacher-input-group">
+                            <label>Qualification *</label>
+                            <input type="text"id="teacherQualification"placeholder="Example: M.Sc, B.Ed"required>
+                        </div>
+
+                        <!-- Phone -->
+                        <div class="teacher-input-group">
+                            <label>Phone Number *</label>
+                            <input  type="tel"  id="teacherPhone" placeholder="10 digit phone number"maxlength="10"required>
+                        </div>
+
+                        <!-- Email -->
+                        <div class="teacher-input-group">
+                            <label>Email</label>
+                            <input  type="email" id="teacherEmail"placeholder="example@email.com">
+                        </div>
+
+                        <!-- Joining Date -->
+                        <div class="teacher-input-group">
+                            <label>Joining Date</label>
+                            <input  type="date" id="teacherJoiningDate">
+                        </div>
+
+                        <!-- Address -->
+                        <div class="teacher-input-group teacher-full-width">
+                            <label>Address</label>
+                            <textarea id="teacherAddress" rows="3"placeholder="Enter address"></textarea>
+                        </div>
+                    </div>
+
+                    <!-- FORM BUTTONS -->
+                    <div class="teacher-form-buttons">
+                        <button type="submit" class="teacher-save-btn">Save Staff  </button>
+                        <button type="button"
+                                class="teacher-clear-btn"
+                                 onclick="resetTeacherForm()"> Clear</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- SEARCH -->
+            <div class="teacher-record-header">
+                <div>
+                    <h3>Staff Records</h3>
+                    <p>View and manage all teacher and staff records.</p>
+                </div>
+
+                <div class="teacher-search">
+                    <input
+                        type="text"
+                        id="teacherSearch"
+                        placeholder="🔍 Search staff...">
+                </div>
+            </div>
+
+            <!-- TABLE -->
+            <div class="teacher-table-wrapper">
+                <table class="teacher-table">
+                    <thead>
+                        <tr>
+                            <th>Staff ID</th>
+                            <th>Name</th>
+                            <th>Gender</th>
+                            <th>Designation</th>
+                            <th>Subject</th>
+                            <th>Qualification</th>
+                            <th>Phone</th>
+                            <th>Joining Date</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody id="teacherTableBody">
+                    </tbody>
+                </table>
+
+                <div id="teacherEmptyMessage"
+                     class="teacher-empty">
+                    No teacher or staff records found.
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<section id="attendanceModule" class="attendance-module">
+<h2>Attendance & Daily Records</h2>
+<input type="date" id="attDate">
+<select id="attClass">
+<option value="">Select Class</option>
+<option>Class 1</option>
+<option>Class 2</option>
+<option>Class 3</option>
+<option>Class 4</option>
+<option>Class 5</option>
+<option>Class 6</option>
+<option>Class 7</option>
+<option>Class 8</option>
+<option>Class 9</option>
+<option>Class 10</option>
+<option>Class 11</option>
+<option>Class 12</option>
+</select>
+
+<button onclick="loadAttendance()">Load Students</button>
+<table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="attendanceList"></tbody>
+</table>
+
+<button onclick="saveAttendance()">Save Attendance</button>
+<button onclick="closeAttendance()">Back</button>
+</section>
+
+<!-- MODULE 5 -->
+<section id="classModule" class="class-module">
+    <h2>Class & Academic Management</h2>
+    <div class="class-form">
+        <input type="text" id="className" placeholder="Class Name">
+        <select id="classSection">
+            <option value="">Select Section</option>
+            <option>A</option>
+            <option>B</option>
+            <option>C</option>
+            <option>D</option>
+        </select>
+        <input type="text" id="classTeacher"
+               placeholder="Class Teacher">
+        <button onclick="addClass()">Add Class</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Class</th>
+                <th>Section</th>
+                <th>Class Teacher</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+
+        <tbody id="classList"></tbody>
+    </table>
+    <button onclick="closeClassModule()">← Back to Home</button>
+</section>
+
+<!-- MODULE 6 -->
+<section id="feeModule" class="fee-module">
+    <h2>Fee & Payment Management</h2>
+    <div class="fee-form">
+        <input type="text" id="feeStudent"
+               placeholder="Student ID">
+
+        <input type="text" id="feeName"
+               placeholder="Student Name">
+
+        <input type="number" id="feeAmount"
+               placeholder="Fee Amount">
+
+        <select id="feeStatus">
+            <option value="">Payment Status</option>
+            <option>Paid</option>
+            <option>Pending</option>
+        </select>
+
+        <button onclick="addFee()">Add Payment</button>
+    </div>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Student ID</th>
+                <th>Name</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>Action</th>
+            </tr>
+        </thead>
+        <tbody id="feeList"></tbody>
+    </table>
+
+    <button onclick="closeFeeModule()">← Back to Home</button>
+    
+</section>
+    <script src="script.js"></script>
+</body>
+</html>
